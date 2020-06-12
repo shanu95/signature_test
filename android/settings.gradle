@@ -1,0 +1,9 @@
+rootProject.name = 'signature_test'
+include ':react-native-tesseract-ocr'
+project(':react-native-tesseract-ocr').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tesseract-ocr/android')
+include ':react-native-tesseract-ocr'
+project(':react-native-tesseract-ocr').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-tesseract-ocr/android')
+include ':react-native-signature-capture'
+project(':react-native-signature-capture').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-signature-capture/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
